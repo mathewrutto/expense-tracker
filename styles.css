@@ -1,0 +1,88 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('Leaves.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.blur-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(10, 7, 7, 0.34); 
+    backdrop-filter: blur(1px); 
+    -webkit-backdrop-filter: blur(10px); 
+}
+
+header, nav, section, footer {
+    position: relative;  
+        z-index: 1;
+}
+
+header {
+    text-align: center;
+    padding: 1em 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+}
+
+section {
+    padding: 2em;
+    text-align: center;
+    color: #ffffff;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+@media (max-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form {
+        align-items: center;
+    }
+
+    table, th, td {
+        display: block;
+        width: 100%;
+    }
+
+    th, td {
+        text-align: right;
+    }
+}
